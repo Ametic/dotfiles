@@ -9,7 +9,7 @@ Uses some parts from other configurations mentioned in **Credits**.
 - If you're sure that u want to use it, follow these steps:
 - Use these commands:
 	- ```nix-shell -p git vim```
-	- ```git clone https://github.com/ametic/nixos-config ~/nixos-config```
+	- ```git clone https://github.com/ametic/dotfiles ~/nixos-config```
 - Open your text editor, open `/nixos-config` folder, and search for keyword `jakub` which is my hostname, and replace for yours. 
 - Generate your hardware configuration using this command:
 	- ```nixos-generate-config --show-hardware-config > hosts/desktop/hardware.nix```
