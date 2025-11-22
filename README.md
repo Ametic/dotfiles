@@ -17,6 +17,10 @@ Uses some parts from other configurations mentioned in **Credits**.
 	- ``` NIX_CONFIG="experimental-features = nix-command flakes" ```
 	- ```sudo nixos-rebuild switch --flake .#desktop```
 
+### Notes
+- [] SDDM is broken (need to fix theming)
+- [] No variables
+
 #### Credits
 - [Zaney](https://gitlab.com/Zaney/) - [ZaneyOS](https://gitlab.com/Zaney/zaneyos)
 - [anmaro](https://github.com/annmaro) - [hyprnix](https://github.com/annmaro/hyprnix/)
