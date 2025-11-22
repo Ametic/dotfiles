@@ -10,8 +10,8 @@
     '';
     shellAliases = {
       sv = "sudo nvim";
-      fr = "nh os switch";
-      fu = "nh os switch --update";
+      fr = "nh os switch --hostname desktop";
+      fu = "nh os switch --hostname desktop --update";
       ncg = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
       v = "nvim";
       cat = "bat";
