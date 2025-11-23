@@ -17,5 +17,6 @@
         filezilla
         element-desktop
         deadbeef
+        thunderbird
     ];
 }
