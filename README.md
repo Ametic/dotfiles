@@ -18,7 +18,6 @@ Uses some parts from other configurations mentioned in **Credits**.
 	- ```sudo nixos-rebuild switch --flake .#desktop```
 
 ### Notes
-- [ ] SDDM is broken (need to fix theming)
 - [ ] No variables
 
 #### Credits

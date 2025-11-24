@@ -1,4 +1,7 @@
 { profile, pkgs, config, lib, ... }:
+let
+    sddm-astronaut = pkgs.sddm-astronaut;
+in
 {
     services = {
         libinput.enable = true;
@@ -50,8 +53,9 @@
                 enable = true;
                 wayland.enable = true;
                 theme = "sddm-astronaut-theme";
+                extraPackages = [sddm-astronaut];
             };
         };
     };
-    environment.systemPackages = with pkgs; [ sddm-astronaut ];
+    environment.systemPackages = [sddm-astronaut];
 }
