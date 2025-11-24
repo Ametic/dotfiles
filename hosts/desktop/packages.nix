@@ -16,9 +16,7 @@
         youtube-music
         filezilla
         element-desktop
-        deadbeef
         thunderbird
-        teamspeak3
         osu-lazer-bin
     ];
 }

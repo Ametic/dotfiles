@@ -44,6 +44,9 @@
     };
 
     nixpkgs.config.allowUnfree = true;
+    nixpkgs.config.permittedInsecurePackages = [
+        "qtwebengine-5.15.19"
+    ];
 
     environment.systemPackages = with pkgs; [
         appimage-run
@@ -53,7 +56,7 @@
         file-roller
         gedit
         gimp
-        glxinfo
+        mesa-demos
         htop
         hyprpicker
         inxi
