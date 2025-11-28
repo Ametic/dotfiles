@@ -6,7 +6,6 @@
   
   programs.nixcord = {
     enable = true;
-    vesktop.enable = true;
     config = {
       useQuickCss = true;
       themeLinks = [
@@ -19,6 +18,14 @@
         newGuildSettings.enable = true;
         imageZoom.enable = true;
         translate.enable = true;
+        lastFmRichPresence = {
+          enable = true;
+          hideWithSpotify = true;
+          hideWithActivity = true;
+          username = "xametic";
+          statusName = "Last.FM";
+        };
+        messageClickActions.enable = true;
       };
     };
   };

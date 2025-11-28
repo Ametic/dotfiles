@@ -18,5 +18,7 @@
         element-desktop
         thunderbird
         osu-lazer-bin
-    ];
+        obsidian
+        luanti
+    ]; 
 }

@@ -8,6 +8,11 @@
     stylix.url = "github:danth/stylix";
     nix-flatpak.url = "github:gmodena/nix-flatpak?ref=latest";
     nixcord.url = "github:kaylorben/nixcord";
+    plasma-manager = {
+      url = "github:nix-community/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, nix-flatpak, ... }@inputs: {
