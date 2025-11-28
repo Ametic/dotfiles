@@ -3,7 +3,7 @@
     programs = {
         firefox.enable = true;
         dconf.enable = true;
-        seahorse.enable = true;
+        seahorse.enable = false;
         adb.enable = true;
         gnupg.agent = {
             enable = true;
@@ -41,7 +41,7 @@
                 thunar-volman
             ];
         };
-    };
+  };
 
     nixpkgs.config.allowUnfree = true;
     nixpkgs.config.permittedInsecurePackages = [

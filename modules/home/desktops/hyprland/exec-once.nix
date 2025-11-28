@@ -12,7 +12,7 @@
       "killall -q swww;sleep .5 && swww-daemon"
       "killall -q waybar;sleep .5 && waybar"
       "killall -q swaync;sleep .5 && swaync"
-      "wallsetter &"
+      "#wallsetter &"
       "pypr &"
       "nm-applet --indicator"
       "sleep 1.0 && swww img ../../../core/wallpapers/Anime-Purple-eyes.png" # [ !!! ]

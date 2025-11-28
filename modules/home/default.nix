@@ -7,7 +7,7 @@
     ./cava.nix
     # Desktops
     ./desktops/hyprland
-    ./desktops/plasma
+    #./desktops/plasma
     ./emoji.nix
     ./eza.nix
     ./fastfetch
