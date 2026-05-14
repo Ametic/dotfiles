@@ -16,6 +16,7 @@ Uses some parts from other configurations mentioned in **Credits**.
 - Rebuild configuration using these commands:
 	- ``` NIX_CONFIG="experimental-features = nix-command flakes" ```
 	- ```sudo nixos-rebuild switch --flake .#desktop```
+- (Later use alias `fr` for rebuilding)
 
 ### Notes
 - [ ] No variables
