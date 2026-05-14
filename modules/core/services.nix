@@ -4,6 +4,9 @@ let
 in
 {
     services = {
+	    desktopManager = {
+	        plasma6.enable = true;
+        };
         libinput.enable = true;
         fstrim.enable = true;
         gvfs.enable = true;

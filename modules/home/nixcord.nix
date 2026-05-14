@@ -6,6 +6,7 @@
   
   programs.nixcord = {
     enable = true;
+    discord.vencord.enable = true;
     config = {
       useQuickCss = true;
       themeLinks = [

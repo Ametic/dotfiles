@@ -9,10 +9,10 @@
             enable = true;
             enableSSHSupport = true;
         };
-        hyprland = {
-            enable = true;
-            withUWSM = false;
-        };
+        #hyprland = {
+        #    enable = true;
+        #    withUWSM = false;
+        #};
         gamemode.enable = true;
         nh = {
             enable = true;
@@ -20,7 +20,7 @@
                 enable = true;
                 extraArgs = "--keep-since 7d --keep 5";
             };
-            flake = "/home/jakub/nix-config"; # [ !!! ]
+            flake = "/home/jakub/dotfiles"; # [ !!! ]
         };
         steam = {
             enable = true;
@@ -58,7 +58,7 @@
         gimp
         mesa-demos
         htop
-        hyprpicker
+        #hyprpicker
         inxi
         killall
         libnotify

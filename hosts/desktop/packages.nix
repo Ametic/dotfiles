@@ -14,11 +14,16 @@
         video-downloader
         droidcam
         youtube-music
-        filezilla
         element-desktop
-        thunderbird
         osu-lazer-bin
         obsidian
-        luanti
+
+        bazaar
+        feishin
+        filezilla
+        gajim
+        protonvpn-gui
+        gearlever
+        ente-auth
     ]; 
 }

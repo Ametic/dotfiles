@@ -5,20 +5,15 @@
     ./bashrc-personal.nix
     ./btop.nix
     ./cava.nix
-    # Desktops
-    ./desktops/hyprland
-    #./desktops/plasma
-    ./emoji.nix
+    #./desktops/hyprland
     ./eza.nix
     ./fastfetch
-    ./fzf.nix
     ./git.nix
     ./gtk.nix
     ./htop.nix
     ./kitty.nix
     ./nixcord.nix
-    ./scripts
-    ./stylix.nix
+    #./scripts
     ./vscode.nix
     ./xdg.nix
     ./yazi

@@ -3,7 +3,7 @@
   programs.git = {
     enable = true;
     userName = "Ametic";
-    userEmail = "delciakx@gmail.com";
+    userEmail = "ametic@proton.me";
 
     extraConfig = {
       # FOSS-friendly settings
