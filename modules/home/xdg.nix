@@ -7,7 +7,7 @@
     };
     portal = {
       enable = true;
-      extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+      extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
       configPackages = [ pkgs.hyprland ];
     };
   };

@@ -16,7 +16,6 @@
     #./scripts
     ./vscode.nix
     ./xdg.nix
-    ./yazi
     ./zsh
   ];
 }

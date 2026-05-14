@@ -25,6 +25,11 @@
           hideWithActivity = true;
           username = "xametic";
           statusName = "Last.FM";
+          apiKey = "d5e417a40cfc570fa261a129b37b0370";
+          clickableLinks = true;
+          shareUsername = true;
+          statusDisplayType = "artist";
+          useListeningStatus = true;
         };
         messageClickActions.enable = true;
       };

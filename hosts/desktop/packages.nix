@@ -2,7 +2,6 @@
 {
     environment.systemPackages = with pkgs; [
         audacity
-        discord
         nodejs
         easyeffects
         ntfs3g
@@ -17,7 +16,6 @@
         element-desktop
         osu-lazer-bin
         obsidian
-
         bazaar
         feishin
         filezilla
