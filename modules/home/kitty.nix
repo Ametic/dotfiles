@@ -3,7 +3,7 @@
     enable = true;
     package = pkgs.kitty;
     settings = {
-      font_size = 12;
+      font_size = 14;
       wheel_scroll_min_lines = 1;
       window_padding_width = 4;
       confirm_os_window_close = 0;
@@ -19,6 +19,10 @@
       tab_bar_style = "powerline";
       #tab_bar_style = "fade";
       enabled_layouts = "splits";
+      remember_window_size = "yes";
+      initial_window_width = "640";
+      initial_window_height = "400";
+
     };
     extraConfig = ''
 

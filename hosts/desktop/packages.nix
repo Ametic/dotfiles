@@ -12,7 +12,7 @@
         kdePackages.kdenlive
         video-downloader
         droidcam
-        youtube-music
+        pear-desktop
         element-desktop
         osu-lazer-bin
         obsidian
@@ -20,7 +20,7 @@
         feishin
         filezilla
         gajim
-        protonvpn-gui
+        proton-vpn
         gearlever
         ente-auth
     ]; 
