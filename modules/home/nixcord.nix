@@ -19,7 +19,7 @@
         newGuildSettings.enable = true;
         imageZoom.enable = true;
         translate.enable = true;
-        lastFmRichPresence = {
+        LastFMRichPresence = {
           enable = true;
           hideWithSpotify = true;
           hideWithActivity = true;

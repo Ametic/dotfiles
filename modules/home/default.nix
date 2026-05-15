@@ -10,6 +10,7 @@
     ./fastfetch
     ./git.nix
     ./gtk.nix
+    ./nixvim.nix
     ./htop.nix
     ./kitty.nix
     ./nixcord.nix

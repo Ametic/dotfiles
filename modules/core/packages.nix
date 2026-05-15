@@ -4,7 +4,6 @@
         firefox.enable = true;
         dconf.enable = true;
         seahorse.enable = false;
-        adb.enable = true;
         gnupg.agent = {
             enable = true;
             enableSSHSupport = true;
