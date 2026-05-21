@@ -12,7 +12,6 @@
         #    enable = true;
         #    withUWSM = false;
         #};
-        gamemode.enable = true;
         nh = {
             enable = true;
             clean = {
@@ -20,18 +19,6 @@
                 extraArgs = "--keep-since 7d --keep 5";
             };
             flake = "/home/jakub/dotfiles"; # [ !!! ]
-        };
-        steam = {
-            enable = true;
-            remotePlay.openFirewall = true;
-            dedicatedServer.openFirewall = true;
-            gamescopeSession.enable = true;
-            extraCompatPackages = [ pkgs.proton-ge-bin ];
-        };
-        gamescope = {
-            enable = true;
-            capSysNice = true;
-            args = [ "--rt" "--expose-wayland" ];
         };
         thunar = {
             enable = true;
@@ -76,5 +63,6 @@
         nix-output-monitor
         nvd
         ffmpegthumbnailer
+        bun
     ];
 }

@@ -14,7 +14,6 @@
         droidcam
         pear-desktop
         element-desktop
-        osu-lazer-bin
         obsidian
         bazaar
         feishin
@@ -23,5 +22,6 @@
         proton-vpn
         gearlever
         ente-auth
-    ]; 
+        stremio-linux-shell
+    ];
 }

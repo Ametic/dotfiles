@@ -5,6 +5,7 @@
     ./drivers.nix
     ./flatpak.nix
     ./fonts.nix
+    ./gaming.nix
     ./network.nix
     ./packages.nix
     ./security.nix
