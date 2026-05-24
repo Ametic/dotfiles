@@ -15,6 +15,7 @@
     ./kitty.nix
     ./nixcord.nix
     #./scripts
+    #./stylix.nix
     ./vscode.nix
     ./xdg.nix
     ./zsh

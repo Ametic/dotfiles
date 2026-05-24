@@ -44,7 +44,7 @@
         gimp
         mesa-demos
         htop
-        #hyprpicker
+        hyprpicker
         inxi
         killall
         libnotify
