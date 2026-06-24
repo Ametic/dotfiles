@@ -13,11 +13,12 @@
     ./nixvim.nix
     ./htop.nix
     ./kitty.nix
-    ./nixcord.nix
+    #./nixcord.nix
     #./scripts
     #./stylix.nix
     ./vscode.nix
     ./xdg.nix
+    ./zen-browser.nix
     ./zsh
   ];
 }

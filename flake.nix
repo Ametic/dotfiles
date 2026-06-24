@@ -8,6 +8,10 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak?ref=latest";
     nixcord.url = "github:kaylorben/nixcord";
     stylix.url = "github:danth/stylix/master";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake/beta";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     plasma-manager = {
       url = "github:nix-community/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
