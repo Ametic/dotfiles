@@ -64,5 +64,6 @@
         nvd
         ffmpegthumbnailer
         bun
+        python314Packages.kde-material-you-colors
     ];
 }

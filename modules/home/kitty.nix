@@ -3,7 +3,7 @@
     enable = true;
     package = pkgs.kitty;
     settings = {
-      font_size = 14;
+      font_size = 12;
       wheel_scroll_min_lines = 1;
       window_padding_width = 4;
       confirm_os_window_close = 0;
@@ -22,6 +22,7 @@
       remember_window_size = "yes";
       initial_window_width = "640";
       initial_window_height = "400";
+      background_transparency = 0.7;
 
     };
     extraConfig = ''

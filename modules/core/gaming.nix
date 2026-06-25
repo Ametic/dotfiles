@@ -30,5 +30,6 @@
         hydralauncher
         osu-lazer-bin
         prismlauncher
+        lutris
     ];
 }
