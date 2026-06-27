@@ -8,17 +8,13 @@
             enable = true;
             enableSSHSupport = true;
         };
-        #hyprland = {
-        #    enable = true;
-        #    withUWSM = false;
-        #};
         nh = {
             enable = true;
             clean = {
                 enable = true;
                 extraArgs = "--keep-since 7d --keep 5";
             };
-            flake = "/home/jakub/dotfiles"; # [ !!! ]
+            flake = "/home/jakub/dotfiles";
         };
         thunar = {
             enable = true;
@@ -33,6 +29,11 @@
     nixpkgs.config.permittedInsecurePackages = [
         "qtwebengine-5.15.19"
     ];
+    nixpkgs.config.packageOverrides = pkgs: {
+        curl = pkgs.curl.override {
+            http2Support = true;
+        };
+    };
 
     environment.systemPackages = with pkgs; [
         appimage-run

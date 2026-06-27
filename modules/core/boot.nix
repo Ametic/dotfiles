@@ -8,11 +8,6 @@
     kernel.sysctl = { "vm.max_map_count" = 2147483642; };
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
-    #loader.grub.enable = true;
-    #loader.grub.device = "nodev";
-    #loader.grub.useOSProber = true;
-    #loader.grub.efiSupport = true;
-    # Appimage Support
     binfmt.registrations.appimage = {
       wrapInterpreterInShell = false;
       interpreter = "${pkgs.appimage-run}/bin/appimage-run";

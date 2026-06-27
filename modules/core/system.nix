@@ -1,5 +1,8 @@
 { host, ... }:
 {
+    environment.sessionVariables = {
+        CURL_HTTP_VERSION = "1.1";
+    };
     # Nix Settings
     nix.settings = {
         download-buffer-size = 200000000;

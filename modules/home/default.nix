@@ -6,7 +6,6 @@
     ./btop.nix
     ./cava.nix
     #./desktops/hyprland
-    ./eza.nix
     ./fastfetch
     ./git.nix
     ./gtk.nix

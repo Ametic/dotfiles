@@ -10,9 +10,7 @@
     ./packages.nix
     ./security.nix
     ./services.nix
-    #g./stylix.nix
     ./system.nix
     ./user.nix
-    #inputs.stylix.nixosModules.stylix
   ];
 }
