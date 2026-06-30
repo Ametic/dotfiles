@@ -14,10 +14,9 @@
     ./kitty.nix
     ./nixcord.nix
     #./scripts
-    #./stylix.nix
+    ./stylix.nix
     ./vscode.nix
     ./xdg.nix
-    ./zen-browser.nix
     ./zsh
   ];
 }

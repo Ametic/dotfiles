@@ -11,6 +11,7 @@
     ./security.nix
     ./services.nix
     ./system.nix
+    ./stylix.nix
     ./user.nix
   ];
 }

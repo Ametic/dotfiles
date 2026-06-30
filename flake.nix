@@ -7,9 +7,12 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nix-flatpak.url = "github:gmodena/nix-flatpak?ref=latest";
     nixcord.url = "github:kaylorben/nixcord";
-    stylix.url = "github:danth/stylix/master";
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake/beta";
+      url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     plasma-manager = {
@@ -24,7 +27,7 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-flatpak, nixvim, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nix-flatpak, nixvim, stylix, ... }@inputs: {
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = {
@@ -33,6 +36,7 @@
       modules = [
         ./hosts/desktop
         nix-flatpak.nixosModules.nix-flatpak
+        stylix.nixosModules.stylix
       ];
     };
   };

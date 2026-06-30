@@ -23,6 +23,8 @@
                 pkgs.thunar-volman
             ];
         };
+        nix-ld.enable = true;
+        npm.enable = true;
   };
 
     nixpkgs.config.allowUnfree = true;
@@ -45,7 +47,6 @@
         gimp
         mesa-demos
         htop
-        hyprpicker
         inxi
         killall
         libnotify
@@ -66,5 +67,6 @@
         ffmpegthumbnailer
         bun
         python314Packages.kde-material-you-colors
+        inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
 }
