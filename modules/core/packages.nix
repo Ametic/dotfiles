@@ -38,35 +38,46 @@
     };
 
     environment.systemPackages = with pkgs; [
-        appimage-run
-        cliphist
-        duf
-        ffmpeg
-        file-roller
-        gedit
-        gimp
-        mesa-demos
-        htop
-        inxi
-        killall
-        libnotify
-        lm_sensors
-        mpv
-        ncdu
-        pavucontrol
-        pciutils
-        ripgrep
-        unrar
-        unzip
-        uwsm
-        v4l-utils
-        waypaper
-        wget
-        nix-output-monitor
-        nvd
-        ffmpegthumbnailer
-        bun
-        python314Packages.kde-material-you-colors
-        inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+        
+        # Multimedia
+        ffmpeg # Cross-platform solution to record, convert and stream audio and video
+        ffmpegthumbnailer # Lightweight video thumbnailer for file managers
+        gimp # GNU Image Manipulation Program (graphics editor)
+        mpv # Media player based on MPlayer and mplayer2
+        v4l-utils # Collection of utilities for Video4Linux devices
+
+        # System Tools & Monitoring
+        htop # Interactive process viewer and system monitor
+        inxi # Command-line system information tool
+        killall # Utility to kill processes by name
+        lm_sensors # Tools for monitoring hardware temperatures and fan speeds
+        ncdu # NCurses disk usage analyzer
+        pavucontrol # PulseAudio volume control GUI
+        pciutils # Utilities for inspecting PCI devices (like lspci)
+
+        # File Management & Archiving
+        file-roller # Archive manager for the GNOME desktop
+        unrar # Utility to extract files from RAR archives
+        unzip # Utility to unpack and list files from ZIP archives
+
+        # Productivity & Text Editors
+        cliphist # Wayland clipboard manager with support for text and images
+        gedit # Text editor for the GNOME desktop environment
+        ripgrep # Line-oriented search tool that recursively searches directories (rg)
+        wget # Command-line utility for downloading files from the web
+
+        # Desktop & Window Manager Utilities
+        libnotify # Library for sending desktop notifications
+        waypaper # GUI wallpaper setter for Wayland and X11 window managers
+        uwsm # Universal Wayland Session Manager
+
+        # Development & Nix Tools
+        bun # Fast all-in-one JavaScript runtime, bundler, test runner, and package manager
+        mesa-demos # Collection of OpenGL demonstration and benchmarking utilities
+        nix-output-monitor # Pipe nix-build output through this to get a pretty progress graph
+        nvd # Nix/NixOS package version diff tool
+
+        # Web Browsers
+        inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default # Zen Browser
     ];
 }
