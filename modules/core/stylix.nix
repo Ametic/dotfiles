@@ -2,7 +2,7 @@
 {
   stylix = {
     enable = true;
-    image = ../../wallpapers/cave-sunset-view.png;
+    image = pkgs.nixos-artwork.wallpapers.catppuccin-mocha.gnomeFilePath;
     targets.kmscon.enable = false;
     polarity = "dark";
     opacity.terminal = 1.0;

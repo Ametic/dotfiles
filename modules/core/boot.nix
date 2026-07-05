@@ -4,7 +4,7 @@
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
     kernelModules = [ "v4l2loopback" ];
-    kernelParams = [ "nohibernate" "usbcore.autosuspend=-1" "mitigations=off" "loglevel=2" ];
+    kernelParams = [ "quiet" "splash" "usbcore.autosuspend=-1" "mitigations=off" "loglevel=2" ];
     extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
     kernel.sysctl = {
       "kernel.split_lock_mitigate" = 0;
@@ -38,11 +38,10 @@
     };
     tmp.cleanOnBoot = true;
     plymouth.enable = true;
+    initrd.systemd.enable = true;
+    initrd.verbose = false;
+    consoleLogLevel = 0;
     supportedFilesystems = ["exfat" "btrfs" "ntfs"];
-  };
-
-  systemd.settings.Manager = {
-    DefaultTimeoutStopSec = "12s";
   };
 
   powerManagement = {

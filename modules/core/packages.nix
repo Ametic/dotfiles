@@ -25,6 +25,11 @@
         };
         nix-ld.enable = true;
         npm.enable = true;
+        hyprland = {
+            enable = false;
+            withUWSM = false;
+        };
+        hyprlock.enable = false;
   };
 
     nixpkgs.config.allowUnfree = true;
@@ -75,6 +80,19 @@
         mesa-demos                  # Collection of OpenGL demonstration and benchmarking utilities
         nix-output-monitor          # Pipe nix-build output through this to get a pretty progress graph
         nvd                         # Nix/NixOS package version diff tool
+
+        # Hyprland
+        gpu-screen-recorder         # As the name says (Dep for Noctalia)
+        power-profiles-daemon       # Dep for Noctalia
+        nwg-displays                # Configure monitors via GUI
+        nwg-drawer                  # Apps launcher for Wayland
+        nwg-dock-hyprland           # Dock for Hyprland
+        nwg-menu                    # Apps menu for Wayland
+        waybar                      # Hyprland bar 
+        waypaper                    # Wallpaper changer
+        matugen                     # Dep for Noctalia
+        app2unit                    # Dep for Noctalia
+	awww
 
         # Web Browsers
         inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default          # Zen Browser
