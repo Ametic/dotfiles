@@ -5,18 +5,22 @@
     ./bashrc-personal.nix
     ./btop.nix
     ./cava.nix
-    #./desktops/hyprland
     ./fastfetch
     ./git.nix
     ./gtk.nix
     ./nixvim.nix
     ./htop.nix
+    ./hyprland
     ./kitty.nix
     ./nixcord.nix
-    #./scripts
+    ./scripts
     ./stylix.nix
     ./vscode.nix
     ./xdg.nix
     ./zsh
+    ./rofi
+    ./waybar/waybar.nix
+    ./wlogout/wlogout.nix
+    ./swaync.nix
   ];
 }

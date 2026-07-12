@@ -26,10 +26,10 @@
         nix-ld.enable = true;
         npm.enable = true;
         hyprland = {
-            enable = false;
+            enable = true;
             withUWSM = false;
         };
-        hyprlock.enable = false;
+        hyprlock.enable = true;
   };
 
     nixpkgs.config.allowUnfree = true;
@@ -92,7 +92,7 @@
         waypaper                    # Wallpaper changer
         matugen                     # Dep for Noctalia
         app2unit                    # Dep for Noctalia
-	awww
+	    awww
 
         # Web Browsers
         inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default          # Zen Browser
