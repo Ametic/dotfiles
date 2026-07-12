@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   wayland.windowManager.hyprland.settings = {
     bindd = [
       "$modifier,D, Rofi Launcher, exec, rofi-launcher"
@@ -13,7 +13,7 @@
       "$modifier SHIFT,N, Notification Reset, exec, swaync-client -rs"
       "$modifier,W, Web Browser, exec, zen"
       "$modifier,Y, File Manager, exec, kitty -e yazi"
-      "$modifier,E, Emoji Picker, exec, emopicker9000"
+      "$modifier,E, File Manager, exec, dolphin"
       "$modifier,S, Screenshot, exec, screenshootin"
       # ============= SCREENSHOTS =============
       "$modifier CTRL,S, Screenshot Output, exec, hyprshot -m output -o $HOME/Pictures/ScreenShots"
