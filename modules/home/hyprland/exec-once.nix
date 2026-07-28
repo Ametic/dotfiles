@@ -7,12 +7,11 @@
       "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
       "systemctl --user start hyprpolkitagent"
       "hyprland-change-layout init" 
-
-      "killall -q awww;sleep .5 && awww-daemon"
-      "killall -q waybar;sleep .5 && waybar"
-      "killall -q swaync;sleep .5 && swaync"
-      "nm-applet --indicator"
-      # ZMIEŃ: był ${stylixImage} z hosta - wpisz ścieżkę do swojej tapety
+      "start.noctalia"
+      #"killall -q awww;sleep .5 && awww-daemon"
+      #"killall -q waybar;sleep .5 && waybar"
+      #"killall -q swaync;sleep .5 && swaync"
+      #"nm-applet --indicator"
       "sh -lc 'sleep 2 && (qs-wallpapers-restore || waypaper --wallpaper $HOME/Pictures/Wallpapers/cave-sunset-view.png --backend awww) >/dev/null 2>&1 || true'"
     ];
   };

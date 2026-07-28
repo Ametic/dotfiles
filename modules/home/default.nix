@@ -19,7 +19,7 @@
     ./xdg.nix
     ./zsh
     ./rofi
-    ./waybar/waybar.nix
+    ./noctalia.nix
     ./wlogout/wlogout.nix
     ./swaync.nix
   ];
