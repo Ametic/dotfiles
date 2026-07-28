@@ -35,6 +35,7 @@
     nixpkgs.config.allowUnfree = true;
     nixpkgs.config.permittedInsecurePackages = [
         "qtwebengine-5.15.19"
+        "electron-39.8.10"
     ];
     nixpkgs.config.packageOverrides = pkgs: {
         curl = pkgs.curl.override {

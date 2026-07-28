@@ -14,4 +14,5 @@
     services.xserver.videoDrivers = [ "amdgpu" ];
     hardware.keyboard.qmk.enable = true;
     hardware.xone.enable = true;
+    virtualisation.docker.enable = true;
 }

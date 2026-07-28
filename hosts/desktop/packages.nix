@@ -28,6 +28,7 @@
     # Productivity & Notes
     obsidian # Powerful, local-first markdown note-taking app
     ente-auth # Open-source, end-to-end encrypted 2FA authenticator app
+    logseq # Privacy-first, open-source platform for knowledge management and collaboration
 
     # Tools
     nodejs # JavaScript runtime built on Chrome's V8 engine
