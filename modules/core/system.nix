@@ -1,17 +1,13 @@
-{ host, ... }:
+{ ... }:
 {
     environment.sessionVariables = {
         CURL_HTTP_VERSION = "1.1";
     };
-    # Nix Settings
     nix.settings = {
         download-buffer-size = 200000000;
         auto-optimise-store = true;
         experimental-features = [ "nix-command" "flakes" ];
-        substituters = [ "https://hyprland.cachix.org" ];
-        trusted-public-keys = [ "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" ];
     };
-    # TimeZone
     time.timeZone = "Europe/Warsaw";
     i18n.defaultLocale = "pl_PL.UTF-8";
     i18n.extraLocaleSettings = {
@@ -26,7 +22,6 @@
         LC_TIME = "pl_PL.UTF-8";
     };
     console.keyMap = "pl";
-    # xserver
     services.xserver = {
         enable = true;
         xkb.layout = "pl";

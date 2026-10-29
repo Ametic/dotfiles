@@ -1,4 +1,4 @@
-{ inputs, host, ... }:
+{ inputs, ... }:
 {
   imports = [
     ./boot.nix

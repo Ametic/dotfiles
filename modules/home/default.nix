@@ -1,4 +1,4 @@
-{ host, ... }:
+{ ... }:
 {
   imports = [
     ./bash.nix
@@ -10,17 +10,11 @@
     ./gtk.nix
     ./nixvim.nix
     ./htop.nix
-    ./hyprland
     ./kitty.nix
     ./nixcord.nix
-    ./scripts
     ./stylix.nix
     ./vscode.nix
     ./xdg.nix
     ./zsh
-    ./rofi
-    ./noctalia.nix
-    ./wlogout/wlogout.nix
-    ./swaync.nix
   ];
 }

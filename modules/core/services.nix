@@ -1,4 +1,4 @@
-{ profile, pkgs, config, lib, ... }:
+{ pkgs, config, lib, ... }:
 let
     sddm-astronaut = pkgs.sddm-astronaut;
 in

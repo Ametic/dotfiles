@@ -22,7 +22,7 @@
       remember_window_size = "yes";
       initial_window_width = "640";
       initial_window_height = "400";
-      background_transparency = 0.7;
+      background_opacity = 0.7;
 
     };
     extraConfig = ''
@@ -32,8 +32,6 @@
       map shift+insert        paste_from_selection
 
       # Scrolling
-      map ctrl+shift+up        scroll_line_up
-      map ctrl+shift+down      scroll_line_down
       map ctrl+shift+k         scroll_line_up
       map ctrl+shift+j         scroll_line_down
       map ctrl+shift+page_up   scroll_page_up

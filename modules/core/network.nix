@@ -1,19 +1,17 @@
 {
   pkgs,
-  host,
   options,
   ...
 }:
 {
-  # Network
   networking = {
-    hostName = "nixos";
+    hostName = "desktop";
     networkmanager.enable = true;
-    enableIPv6 = false; # <---- STEAM SLOW DOWNLOAD SPEEDS REASON, LEAVE IT OFF
+    enableIPv6 = false;
     dhcpcd.wait = "background";
     dhcpcd.extraConfig = "noarp";
     timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
-    nameservers = [ "1.1.1.1" "1.0.0.1" ]; # Cloudflare DNS
+    nameservers = [ "1.1.1.1" "1.0.0.1" ];
   };
   systemd.services.NetworkManager-wait-online.enable = false;
   environment.systemPackages = with pkgs; [ networkmanagerapplet ];

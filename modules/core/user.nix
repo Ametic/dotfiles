@@ -1,4 +1,4 @@
-{ pkgs, inputs, username, host, profile, ... }:
+{ pkgs, inputs, username ? "jakub", host ? "desktop", profile ? "desktop", ... }:
 {
   imports = [ inputs.home-manager.nixosModules.home-manager ];
   home-manager = {
@@ -11,7 +11,7 @@
       home = {
         username = "jakub";
         homeDirectory = "/home/jakub";
-        stateVersion = "26.11";
+        stateVersion = "25.05";
       };
     };
   };
@@ -21,13 +21,13 @@
     description = "Ametic";
     extraGroups = [
       "adbusers"
-      "docker" #access to docker as non-root
-      "libvirtd" #Virt manager/QEMU access
+      "docker"
+      "libvirtd"
       "lp"
       "networkmanager"
       "scanner"
-      "wheel" #subdo access
-      "vboxusers" #Virtual Box
+      "wheel"
+      "vboxusers"
     ];
     shell = pkgs.zsh;
     ignoreShellProgramCheck = true;

@@ -14,7 +14,7 @@
                 enable = true;
                 extraArgs = "--keep-since 7d --keep 5";
             };
-            flake = "/home/jakub/dotfiles";
+            flake = "/home/jakub/Dokumenty/dotfiles";
         };
         thunar = {
             enable = true;

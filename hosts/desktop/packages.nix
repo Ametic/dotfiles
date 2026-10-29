@@ -20,7 +20,6 @@
     halloy # IRC client written in Rust
 
     # Games & Launchers
-    prismlauncher # Open-source launcher for Minecraft with multi-instance support
     artix-games-launcher # Desktop launcher for Artix Entertainment games
     interlude # YAVSRG
     bolt-launcher # Alternative launcher for RuneScape

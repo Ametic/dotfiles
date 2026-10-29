@@ -1,8 +1,8 @@
-{ pkgs, host, ... }:
+{ pkgs, ... }:
 {
   stylix = {
     enable = true;
-    image = pkgs.nixos-artwork.wallpapers.catppuccin-mocha.gnomeFilePath;
+    image = pkgs.nixos-artwork.wallpapers.nineish-catppuccin-mocha.gnomeFilePath;
     targets.kmscon.enable = false;
     polarity = "dark";
     opacity.terminal = 1.0;
