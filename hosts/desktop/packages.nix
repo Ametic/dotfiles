@@ -38,7 +38,6 @@
     hugo # Static site generator
 
     # Launchers
-    gearlever # AppImage manager to easily install, manage, and update AppImages
     stremio-linux-shell # Media streaming application framework for movies and TV series
 
     # Networking & Security

@@ -2,6 +2,7 @@
 {
   imports = [
     ./boot.nix
+    ./desktop.nix
     ./drivers.nix
     ./flatpak.nix
     ./fonts.nix

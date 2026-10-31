@@ -17,20 +17,27 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-flatpak, nixvim, stylix, ... }@inputs: {
-    nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
+  outputs = { self, nixpkgs, home-manager, nix-flatpak, nixvim, stylix, ... }@inputs:
+    let
       system = "x86_64-linux";
-      specialArgs = {
-        inherit inputs;
-        host = "desktop";
-        username = "jakub";
-        profile = "desktop";
+      username = "jakub";
+      mkHost = host: nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = {
+          inherit inputs host username;
+          profile = host;
+        };
+        modules = [
+          ./hosts/${host}
+          nix-flatpak.nixosModules.nix-flatpak
+          stylix.nixosModules.stylix
+        ];
       };
-      modules = [
-        ./hosts/desktop
-        nix-flatpak.nixosModules.nix-flatpak
-        stylix.nixosModules.stylix
-      ];
+    in
+    {
+      nixosConfigurations = {
+        desktop = mkHost "desktop";
+        x270 = mkHost "x270";
+      };
     };
-  };
 }

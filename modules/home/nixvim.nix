@@ -5,12 +5,20 @@
   pkgs,
   ...
 }:
+let
+  cfg = config.home.nixvim;
+in
 {
   # Bring in Nixvim's Home Manager module so programs.nixvim options exist
   imports = [ inputs.nixvim.homeModules.nixvim ];
 
-  programs.nixvim = {
-    enable = true;
+  options.home.nixvim = {
+    enable = lib.mkEnableOption "edytor Neovim (Nixvim)";
+  };
+
+  config = lib.mkIf cfg.enable {
+    programs.nixvim = {
+      enable = true;
     viAlias = true;
     vimAlias = true;
 
@@ -494,4 +502,5 @@
     mkdir -p "$HOME/.local/share/nvim/project_nvim"
     find "$HOME/.local/share/nvim/project_nvim" -type f -size 0 -delete 2>/dev/null || true
   '';
+  };
 }
