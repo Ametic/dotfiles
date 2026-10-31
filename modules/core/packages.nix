@@ -14,7 +14,7 @@
                 enable = true;
                 extraArgs = "--keep-since 7d --keep 5";
             };
-            flake = "/home/jakub/Dokumenty/dotfiles";
+            flake = "/home/jakub/nixos-config";
         };
         thunar = {
             enable = true;
