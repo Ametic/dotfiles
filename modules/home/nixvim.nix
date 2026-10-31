@@ -19,8 +19,9 @@ in
   config = lib.mkIf cfg.enable {
     programs.nixvim = {
       enable = true;
-    viAlias = true;
-    vimAlias = true;
+      nixpkgs.source = inputs.nixpkgs;
+      viAlias = true;
+      vimAlias = true;
 
     globals = {
       mapleader = " ";

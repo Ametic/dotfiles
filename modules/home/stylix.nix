@@ -10,6 +10,7 @@ in
   config = lib.mkIf cfg.enable {
     stylix.targets = {
       nixcord.enable = false;
+      qt.enable = false;
       waybar.enable = false;
       rofi.enable = false;
       hyprland.enable = false;

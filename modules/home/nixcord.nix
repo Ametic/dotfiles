@@ -25,7 +25,7 @@ in
           newGuildSettings.enable = true;
           imageZoom.enable = true;
           translate.enable = true;
-          LastFMRichPresence = {
+          musicRichPresence = {
             enable = true;
             hideWithSpotify = true;
             hideWithActivity = true;
